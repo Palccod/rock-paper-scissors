@@ -1,12 +1,18 @@
 import random
+import time
 
 choices = ["rock", "paper", "scissors"]
+rpc = "rock paper scissors"
+words = rpc.split()
 
 print("Rock Paper Scissors v1.0")
 print("")
 
 # initial
-print("rock paper scissors")
+for word in words:
+    print(word, end=" ", flush=True)
+    time.sleep(0.5)
+print()
 
 pc_choice = random.choice(choices)
 player_choice = input("Type your choice: ")
